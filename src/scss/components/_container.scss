@@ -1,0 +1,108 @@
+.view-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.view-container-fluid {
+    width: 100%;
+    max-width: calc(100% - ((100% - 1150px) / 2));
+    padding: 0 20px;
+}
+
+.view-section {
+    padding: rem(110px) 0;
+    background-color: var(--text-color-white);
+
+    &--background {
+        background-color: #F2F4F5;
+    }
+
+    &--background-light {
+        background-color: #FAFAFA;
+    }
+
+    &--black {
+        background-color: var(--text-color-black);
+        color: var(--text-color-white);
+
+        .text-link {
+            color: var(--text-color-white);
+
+            @media (min-width: 1024px) {
+
+                &:hover {
+                    color: var(--text-color-blue);
+                }
+            }
+        }
+
+        .simplebar-scrollbar {
+            opacity: .9 !important;
+
+            &::before {
+                background-color: var(--text-color-white) !important;
+                opacity: 1 !important;
+            }
+        }
+
+        .view-title--section::before {
+            background-color: var(--text-color-white);
+        }
+
+        .button {
+
+            &--primary {
+                border: 2px solid var(--text-color-blue);
+
+                @media (min-width: 1024px) {
+
+                    &:hover {
+                        color: var(--text-color-blue);
+                    }
+                }
+            }
+
+            &--details {
+                color: var(--text-color-blue);
+
+                @media (min-width: 1024px) {
+
+                    &:hover {
+                        color: var(--text-color-black);
+                    }
+                }
+            }
+        }
+    }
+
+    &--bottom-border {
+        border-bottom: 1px solid var(--text-color-light-gray);
+    }
+
+    &--fifty-fifty {
+        position: relative;
+
+        @media (min-width: 813px) {
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 0;
+                width: 50%;
+                height: 100%;
+                background-color: #F2F4F5;
+            }
+        }
+
+        .view-container {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    @media (max-width: 812px) {
+        padding: rem(40px) 0;
+    }
+}

@@ -1,0 +1,29 @@
+[{
+	"headTitle": "Надіслано запитів",
+	"headValue": "32",
+	"footerTitle": "Допущено органів влади",
+	"footerValue": "17",
+	"color": "#24E5DB",
+	"width": "calc(100% * 17 / 32)"
+}, {
+	"headTitle": "Всіх ЗОЗ",
+	"headValue": "30",
+	"footerTitle": "Зареєстровано ЗОЗ",
+	"footerValue": "20",
+	"color": "#FF8B03",
+	"width": "calc(100% * 20 / 30)"
+}, {
+	"headTitle": "Конкурсів на платформі",
+	"headValue": "30",
+	"footerTitle": "Активні конкурси",
+	"footerValue": "20",
+	"color": "#2482FF",
+	"width": "calc(100% * 20 / 30)"
+}, {
+	"headTitle": "Учасники платформи",
+	"headValue": "30",
+	"footerTitle": "Допущено кандидатів та учасників",
+	"footerValue": "20",
+	"color": "#63DF7B",
+	"width": "calc(100% * 20 / 30)"
+}]

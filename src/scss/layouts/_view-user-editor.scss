@@ -1,0 +1,125 @@
+.view-user {
+
+    &-edit {
+
+        &__tabs {
+
+            > * {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: rem(85px);
+                margin: 0 0 rem(10px) 0;
+                padding: 0 rem(30px);
+                border: 1px solid #E0E0E0;
+                background: $white;
+                font-size: rem(16px);
+                line-height: rem(25px);
+                text-transform: uppercase;
+                color: $gray;
+                transition: 200ms $easing;
+            }
+
+            a:hover,
+            span {
+                border-color: #273247;
+            }
+        }
+
+        &__aside {
+            padding: rem(50px) rem(25px);
+            background-color: $white;
+            border: 1px solid #E0E0E0;
+
+            .button {
+                width: 100%;
+                padding-left: rem(15px);
+                padding-right: rem(15px);
+            }
+        }
+
+        .view-form {
+            max-width: rem(580px);
+            margin: 0 0 0 auto;
+            padding: 0 0 0 rem(30px);
+
+            &__field {
+                height: rem(55px);
+            }
+
+            &__group {
+                margin: 0 0 rem(20px) 0;
+
+                label {
+                    display: block;
+                    margin: 0 0 rem(10px) 0;
+                    font-size: rem(16px);
+                    line-height: rem(25px);
+                    text-transform: uppercase;
+                    color: $gray;
+                }
+                
+                &__icon {
+                    bottom: rem(17.5px);
+                }
+            }
+
+            &__tags {
+
+                &__title {
+                    display: block;
+                    margin: 0 0 rem(10px) 0;
+                    font-size: rem(16px);
+                    line-height: rem(25px);
+                    text-transform: uppercase;
+                    color: $gray;
+                }
+
+                &__wrapper {
+                    padding: rem(30px) rem(10px) rem(10px) rem(10px);
+                    background-color: $white;
+                    border: 1px solid #E0E0E0;
+                    box-sizing: border-box;
+                    border-radius: rem(4px);
+                }
+
+                &__item {
+                    display: inline-block;
+                    margin: 0 rem(15px) rem(20px) rem(15px);
+                    font-size: rem(16px);
+                    line-height: rem(19px);
+                    font-family: $light;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    
+                    span {
+                        transition: 100ms $easing;
+                        color: #919191;
+                    }
+
+                    input:checked ~ span {
+                        color: $black;
+                    }
+
+                    @media (min-width: 1024px) {
+
+                        &:hover {
+
+                            span {
+                                color: $black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--create-profile {
+
+            .view-form {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

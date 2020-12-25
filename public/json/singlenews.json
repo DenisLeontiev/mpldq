@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "type": "news",
+        "title": "Magnam hic eveniet quis optio pariatur minima.",
+        "description": "Voluptate voluptatum nam nam culpa maxime dignissimos et maiores. Est quae omnis sit. Ut modi qui molestiae suscipit ad et vitae. Ut fugit et molestias dolorem quo nobis repellendus quo.",
+        "image": {
+            "url": "https://lorempixel.com/320/240/?99837"
+        },
+        "content": "Eius iure fugit accusamus qui dolore. Ut delectus reiciendis recusandae in hic veniam dolor.",
+        "author": "Тетяна Петрівна Панасюк",
+        "created_at": "2020-08-13T12:58:33.000000Z",
+        "metas": []
+    }
+]

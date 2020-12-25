@@ -1,0 +1,200 @@
+.view-canditates {
+
+    @media (min-width: 813px) {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    &__aside {
+        flex-shrink: 0;
+        width: 100%;
+        @media (min-width: 813px) {
+            max-width: rem(438px);
+            padding: 0 rem(30px);
+        }
+    }
+
+    &__list {
+        width: 100%;
+        max-height: rem(410px);
+
+        .simplebar-track.simplebar-vertical {
+            left: rem(-30px);
+        }
+    }
+
+    &__item {
+        display: flex;
+        cursor: pointer;
+        
+        &:not(:first-child) {
+            margin: rem(20px) 0 0 0;
+        }
+
+        color: var(--text-color-white);
+        transition: 200ms $easing;
+        transition-delay: 100ms;
+
+        &__image {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: rem(114px);
+            height: rem(80px);
+            margin: 0 rem(20px) 0 0;
+            transition: 200ms $easing;
+            transform-origin: left center;
+            overflow: hidden;
+
+            &.no-image {
+                background-color: #ECECEC;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+
+            .text-medium {
+                display: inline-block;
+                margin: 0 0 rem(15px) 0;
+            }
+
+            .text-light {
+                margin: 0 0 rem(5px) 0;
+            }
+        }
+
+        &.is-active {
+            padding: rem(3px);
+            background-color: var(--text-color-white);
+            color: var(--text-color-black);
+
+            .view-canditates__item__image {
+                width: rem(126px);
+                height: rem(104px);
+            }
+        }
+
+        &:not(.is-active) {
+
+            .text-gray {
+                color: #ADB5BD;
+            }
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 rem(-30px) 0;
+        padding: 0 0 0 rem(35px);
+
+        .view-text p {
+            margin: 0 0 rem(30px) 0;
+        }
+
+        &__title.text-link {
+            margin: 0 0 rem(5px) 0;
+        }
+
+        &__position {
+            margin: 0 0 rem(20px) 0;
+        }
+
+        &__location {
+            margin: 0 0 rem(15px) 0;
+        }
+
+        .text-link {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 rem(10px) 0;
+
+            svg {
+                fill: none;
+                stroke: var(--text-color-white);
+            }
+
+            @media (min-width: 1024px) {
+
+                &:hover {
+
+                    svg {
+                        fill: none;
+                        stroke: var(--text-color-blue);
+                    }
+                }
+            }
+        }
+
+        &__image {
+            flex-shrink: 0;
+            width: 100%;
+            max-width: rem(265px);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &__caption {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 0 0 rem(50px);
+
+            .view-title {
+                margin-bottom: rem(10px);
+            }
+
+            .view-text {
+                margin: rem(30px) 0 rem(10px) 0;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+
+        @media (min-width: 813px) {
+            margin: rem(50px) rem(-5px) 0 rem(-5px);
+        }
+
+        @media (max-width: 812px) {
+            justify-content: center;
+            margin: rem(40px) rem(-5px) 0 rem(-5px);
+        }
+
+        @media (max-width: 525px) {
+            flex-direction: column;
+            align-items: center;
+
+            .button {
+                width: 100%;
+                margin-bottom: 10px !important;
+            }
+        }
+
+        .button {
+            white-space: nowrap;
+            min-width: unset;
+            margin: 0 rem(5px);
+        }
+    }
+}

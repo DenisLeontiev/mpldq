@@ -1,0 +1,72 @@
+[
+    {
+        "link": "#",
+        "image": "candidate-4.png",
+        "name": "Дмитро Мухін",
+        "full_name": "Дмитро Іванович Мухін",
+        "position": "Головний лікар",
+        "location": "Київська міська лікарня№ 25",
+        "last_place_of_work": "Тернопільська міська лікарня №2 від 25 квітня 2003 року",
+        "why_me_link": "#",
+        "why_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "in_my_opinion_link": "#",
+        "in_my_opinion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+    }, {
+        "link": "#",
+        "image": "candidate-3.png",
+        "name": "Ольга Іваненко",
+        "full_name": "Ольга Іванова Іваненко",
+        "position": "Гінеколог",
+        "location": "",
+        "last_place_of_work": "Тернопільська міська лікарня №2 від 25 квітня 2003 року",
+        "why_me_link": "#",
+        "why_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "in_my_opinion_link": "#",
+        "in_my_opinion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+    }, {
+        "link": "#",
+        "image": "candidate-2.png",
+        "name": "Іван Петров",
+        "full_name": "Іван Іванович Петров",
+        "position": "Кардіолог",
+        "last_place_of_work": "Тернопільська міська лікарня №2 від 25 квітня 2003 року",
+        "why_me_link": "#",
+        "why_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "in_my_opinion_link": "#",
+        "in_my_opinion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+    }, {
+        "link": "#",
+        "image": "candidate-1.png",
+        "name": "Катерина Самойлова",
+        "full_name": "Катерина Іванович Самойлова",
+        "position": "Невропатолог",
+        "last_place_of_work": "Тернопільська міська лікарня №2 від 25 квітня 2003 року",
+        "why_me_link": "#",
+        "why_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "in_my_opinion_link": "#",
+        "in_my_opinion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+    }, {
+        "link": "#",
+        "image": "candidate-3.png",
+        "name": "Ольга Іваненко",
+        "full_name": "Ольга Іванова Іваненко",
+        "position": "Гінеколог",
+        "location": "",
+        "last_place_of_work": "Тернопільська міська лікарня №2 від 25 квітня 2003 року",
+        "why_me_link": "#",
+        "why_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "in_my_opinion_link": "#",
+        "in_my_opinion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+    }, {
+        "link": "#",
+        "image": "candidate-2.png",
+        "name": "Іван Петров",
+        "full_name": "Іван Іванович Петров",
+        "position": "Кардіолог",
+        "last_place_of_work": "Тернопільська міська лікарня №2 від 25 квітня 2003 року",
+        "why_me_link": "#",
+        "why_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
+        "in_my_opinion_link": "#",
+        "in_my_opinion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"
+    }
+]

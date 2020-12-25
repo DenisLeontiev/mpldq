@@ -1,0 +1,47 @@
+[
+    [
+        {
+            "graph": {
+                "label": [13, 6, 5],
+                "eq": {
+                    "from": 56,
+                    "to": 6
+                }
+            },
+            "title": "МОЗ України",
+            "caption": "<div class='text-light'>Всього ЗОЗ: <b>56</b></div><div class='text-light'>Активні конкурси: <b>6</b></div><hr><ul class='colored-list text-sub'><li>Планується</li><li>Проводиться конкурсів </li><li>Завершено</li></ul>"
+        }, {
+            "graph": {
+                "label": [33, 10, 40],
+                "eq": {
+                    "from": 36,
+                    "to": 12
+                }
+            },
+            "title": "Харківська обласна рада",
+            "caption": "<div class='text-light'>Всього ЗОЗ: <b>56</b></div><div class='text-light'>Активні конкурси: <b>6</b></div><hr><ul class='colored-list text-sub'><li>Планується</li><li>Проводиться конкурсів </li><li>Завершено</li></ul>"
+        }
+    ], [
+        {
+            "graph": {
+                "label": [13, 6, 5],
+                "eq": {
+                    "from": 56,
+                    "to": 6
+                }
+            },
+            "title": "Охорони здоров’я міста Харків",
+            "caption": "<div class='text-light text-sub'>Зареєстровані ЗОЗ:</div><ul class='colored-list colored-list--padding text-sub'><li>конкурс планується</li><li>проведено конкурс</li><li>конкурс проводиться</li><li>незареєстровані ЗОЗ</li></ul>"
+        }, {
+            "graph": {
+                "label": [33, 10, 40],
+                "eq": {
+                    "from": 36,
+                    "to": 12
+                }
+            },
+            "title": "Близнюківський районна рада",
+            "caption": "<div class='text-light text-sub'>Зареєстровані ЗОЗ:</div><ul class='colored-list colored-list--padding text-sub'><li>конкурс планується</li><li>проведено конкурс </li><li>конкурс проводиться</li><li>незареєстровані ЗОЗ</li></ul>"
+        }
+    ]
+]

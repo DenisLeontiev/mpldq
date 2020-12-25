@@ -1,0 +1,77 @@
+.view-commissions {
+
+    &__item {
+        display: flex;
+        padding: rem(40px);
+        border: 1px solid var(--text-color-blue);
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+
+                &:not(:first-child) {
+                    margin: rem(10px) 0 0 0;
+                }
+            }
+        }
+
+        &__title {
+            padding: 0 rem(40px) 0 0;
+            border-right: 1px solid #E5E5E5;
+        }
+
+        &__secretary {
+            width: 30.36%;
+            padding: 0 rem(40px) 0 0;
+            border-right: 1px solid #E5E5E5;
+        }
+
+        &__secretary,
+        &__members {
+            padding-left: rem(40px);
+
+            .text-medium {
+                margin: 0 0 rem(12px) 0;
+            }
+        }
+        
+        &:not(:first-child) {
+            margin: rem(40px) 0 0 0;
+        }
+    }
+
+    @media (max-width: 812px) {
+        width: 100%;
+        max-width: rem(600px);
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+
+            &__title.view-title--h3 {
+                border-right: none;
+                margin-bottom: rem(25px);
+                padding-bottom: rem(25px);
+                border-bottom: 1px solid #E5E5E5;
+            }
+
+            &__secretary {
+                width: 100%;
+                margin-bottom: rem(25px);
+                padding-bottom: rem(25px);
+                padding-left: 0;
+                border-right: none;
+                border-bottom: 1px solid #E5E5E5;
+            }
+
+            &__members {
+                width: 100%;
+                padding-left: 0;
+                border-right: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.view-database {
+    @media (min-width: 813px) {
+        margin: 0 rem(-15px) rem(60px) rem(-15px);
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            margin: 0 rem(15px);
+            background-color: #0B2239;
+        }
+    }
+
+    @media (max-width: 812px) {
+        margin: 0 -20px -10px -20px;
+    }
+
+    &__item {
+        margin: 0 0 rem(40px) 0;
+        @media (min-width: 813px) {
+            padding: 0 rem(15px);
+        }
+
+        @media (max-width: 812px) {
+            padding: 0 20px;
+        }
+
+        &__header,
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__header {
+            
+            span {
+                color: #C4C4C4;
+            }
+        }
+
+        &__bar {
+            margin: rem(12px) 0;
+            width: 100%;
+            height: rem(4px);
+            background-color: #C4C4C4;
+            border-radius: rem(2px);
+            overflow: hidden;
+
+            span {
+                display: block;
+                height: 100%;
+                border-radius: rem(2px);
+            }
+        }
+    }
+}

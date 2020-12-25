@@ -1,0 +1,165 @@
+.view-placefinder {
+    display: flex;
+
+    @media (max-width: 812px) {
+        flex-direction: column;
+    }
+
+    &__search {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        @media (min-width: 813px) {
+            width: rem(381px);
+            padding: 0 rem(30px) 0 0;
+        }
+
+        &__field {
+            position: relative;
+            margin: 0 0 rem(6px) 0;
+
+            input {
+                display: block;
+                width: 100%;
+                height: rem(40px);
+                border: none;
+                border-bottom: 1px solid #0B2239;
+                color: var(--text-color-gray);
+                font-family: $light;
+
+                @include placeholder( var(--text-color-gray), true );
+                @include placeholder-on-focus();
+            }
+
+            a {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+
+                @media (min-width: 1024px) {
+
+                    &:hover {
+
+                        svg {
+                            fill: var(--text-color-blue);
+                        }
+                    }
+                }
+            }
+
+            svg {
+                width: rem(18px);
+                height: rem(18px);
+                fill: var(--text-color-gray);
+                transition: 200ms $easing;
+            }
+        }
+
+        .simplebar-track.simplebar-vertical {
+            right: rem(-20px);
+        }
+    }
+
+    &__result {
+        @media (min-width: 813px) {
+            height: rem(485px) !important;
+            margin: 0 rem(-10px) rem(50px) rem(-10px);
+        }
+
+        @media (max-width: 812px) {
+            max-height: rem(485px);
+            margin: 0 rem(-10px) rem(40px) rem(-10px);
+        }
+
+        padding: 0 rem(5px) rem(5px) rem(5px);
+
+        .simplebar-horizontal {
+            display: none !important;
+        }
+
+        .simplebar-content {
+            padding: 0 0 rem(5px) 0 !important;
+
+            &-wrapper {
+                padding: 0 rem(5px) rem(5px) rem(5px);
+                overflow-x: hidden !important;
+            }
+        }
+
+        &__item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: rem(149px);
+            margin: rem(10px) 0 0 0;
+            padding: rem(20px) rem(25px);
+            background: var(--text-color-white);
+            box-shadow: 0px 3px 8px rgba(11, 34, 57, 0.12);
+            overflow: hidden;
+
+            &__footer {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: rem(15px) 0 0 0;
+            }
+
+            &__info {
+                width: 100%;
+            }
+
+            &__rewrapp {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+
+            &__date {
+                flex-shrink: 0;
+            }
+
+            &__link {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                padding: rem(5px) rem(15px);
+                text-align: right;
+                color: var(--text-color-black);
+                text-decoration: underline;
+                background-color: $blue;
+
+                @media (min-width: 1024px) {
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__map {
+        position: relative;
+        flex-shrink: 0;
+        @media (min-width: 813px) {
+            width: calc(100% - #{rem(381px)} + (100vw - 100%) / 2);
+        }
+
+        @media (max-width: 812px) {
+            margin-top: 40px;
+            height: 100vh;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        &__board {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

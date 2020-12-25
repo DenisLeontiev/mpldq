@@ -1,0 +1,359 @@
+@import '~simplebar';
+
+[data-simplebar] {
+	height: 100%;
+}
+
+.simplebar-track.simplebar-vertical {
+	width: rem(6px);
+	background-color: rgba(196, 196, 196, 0.3);
+
+	.simplebar-scrollbar::before {
+		left: 0;
+		right: 0;
+		background-color: rgba(11, 34, 57, .5);
+		border-radius: 0;
+	}
+}
+
+.text {
+
+	&-blue {
+		color: var(--text-color-blue);
+	}
+
+	&-medium {
+		font-family: $medium;
+	}
+
+	&-thin {
+		font-family: $thin;
+	}
+
+	&-regular {
+		font-family: $regular;
+	}
+
+	&-light {
+		font-family: $light;
+	}
+
+	&-sub {
+		font-size: rem(14px);
+		line-height: rem(17px);
+	}
+
+	&-details {
+		font-size: rem(12px);
+		line-height: rem(14px);
+	}
+
+	&-gray {
+		color: var(--text-color-gray);
+	}
+
+	&-link {
+		text-decoration: none;
+		transition: 200ms $easing;
+
+		svg {
+			transition: 200ms $easing;
+		}
+		
+		&:not(.text-link--reverse) {
+			color: var(--text-color-black);
+
+			svg {
+				fill: var(--text-color-black);
+			}	
+
+			&.is-active {
+				color: var(--text-color-blue);
+	
+				svg {
+					fill: var(--text-color-blue);
+				}
+			}
+
+			@media (min-width: 1024px) {
+
+				&:hover {
+					color: var(--text-color-blue);
+	
+					svg {
+						fill: var(--text-color-blue);
+					}
+				}
+			}
+		}
+
+		&--reverse {
+			color: var(--text-color-blue);
+
+			svg {
+				fill: var(--text-color-blue);
+			}	
+
+			&.is-active {
+				color: var(--text-color-black);
+	
+				svg {
+					fill: var(--text-color-black);
+				}
+			}
+
+			@media (min-width: 1024px) {
+
+				&:hover {
+					color: var(--text-color-black);
+	
+					svg {
+						fill: var(--text-color-black);
+					}
+				}
+			}
+		}
+	}
+}
+
+.ta {
+
+	&-right {
+		text-align: right;
+	}
+
+	&-center {
+		text-align: center;
+	}
+
+	@media (min-width: 813px) {
+
+		&-l {
+	
+			&-right {
+				text-align: right;
+			}
+		
+			&-center {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.m {
+
+	&-b {
+
+		&-0 {
+			margin-bottom: 0;
+		}
+
+		&-60 {
+			margin-bottom: rem(60px);
+		}
+
+		&-70 {
+			margin-bottom: rem(70px);
+		}
+
+		&--50 {
+			margin-bottom: rem(-50px);
+		}
+	}
+
+	&-t {
+
+		&-50 {
+			margin-top: rem(50px);
+		}
+
+		&-auto {
+			margin-top: auto;
+		}
+
+		&-60 {
+			margin-top: rem(60px);
+		}
+
+		&-70 {
+			margin-top: rem(70px);
+		}
+	}
+
+	@media (min-width: 813px) {
+
+		&-l {
+
+			&-b {
+
+				&-0 {
+					margin-bottom: 0;
+				}
+		
+				&-60 {
+					margin-bottom: rem(60px);
+				}
+		
+				&-70 {
+					margin-bottom: rem(70px);
+				}
+		
+				&--50 {
+					margin-bottom: rem(-50px);
+				}
+			}
+		
+			&-t {
+		
+				&-50 {
+					margin-top: rem(50px);
+				}
+		
+				&-auto {
+					margin-top: auto;
+				}
+		
+				&-60 {
+					margin-top: rem(60px);
+				}
+		
+				&-70 {
+					margin-top: rem(70px);
+				}
+			}
+		}
+	}
+
+	@media (max-width: 812px) {
+		&-s {
+
+			&-b {
+
+				&-0 {
+					margin-bottom: 0;
+				}
+		
+				&-60 {
+					margin-bottom: rem(60px);
+				}
+		
+				&-70 {
+					margin-bottom: rem(70px);
+				}
+		
+				&--50 {
+					margin-bottom: rem(-50px);
+				}
+			}
+		
+			&-t {
+
+				&-minus-35 {
+					margin-top: -35px;
+				}
+		
+				&-50 {
+					margin-top: rem(50px);
+				}
+		
+				&-auto {
+					margin-top: auto;
+				}
+		
+				&-60 {
+					margin-top: rem(60px);
+				}
+		
+				&-70 {
+					margin-top: rem(70px);
+				}
+			}
+		}
+	}
+}
+
+.p {
+
+	&-t {
+
+		&-0 {
+			padding-top: 0;
+		}
+
+		&-40 {
+			padding-top: rem(40px);
+		}
+
+		&-50 {
+			padding-top: rem(50px);
+		}
+
+		&-70 {
+			padding-top: rem(70px);
+		}
+	}
+
+	&-b {
+
+		&-0 {
+
+			padding-bottom: 0;
+		}
+
+		&-50 {
+			padding-bottom: rem(50px);
+		}
+
+		&-60 {
+			padding-bottom: rem(60px);
+		}
+
+		&-70 {
+			padding-bottom: rem(70px);
+		}
+	}
+
+	&-r {
+
+		&-10 {
+			padding-right: 10px;
+		}
+	}
+
+	&-l {
+		
+		&-10 {
+			padding-left: 10px;
+		}
+	}
+}
+
+.pos {
+
+	&-relative {
+		position: relative;
+	}
+}
+
+.hide {
+
+	@media (min-width: 813px) {
+
+		&-l {
+			display: none !important;
+		}
+	}
+
+	@media (max-width: 812px) {
+
+		&-m {
+			display: none !important;
+		}
+	}
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity .2s $easing;
+}

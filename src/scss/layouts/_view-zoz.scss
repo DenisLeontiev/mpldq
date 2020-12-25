@@ -1,0 +1,114 @@
+.view-zoz {
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 rem(-15px) rem(-50px) rem(-15px);
+
+        * {
+            display: block;
+        }
+
+        > a {
+
+            @media (min-width: 1024px) {
+
+                &:hover {
+
+                    .view-zoz-list__item__image {
+    
+                        &::after {
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__item {
+            position: relative;
+            width: 50%;
+            height: rem(285px);
+            margin: 0 0 rem(50px) 0;
+            padding: 0 rem(15px);
+            overflow: hidden;
+
+            &__image {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                &::after {
+                    content: '';
+                    z-index: 2;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #0B2239;
+                    opacity: 0.6;
+                    transition: 200ms $easing;
+                }
+            }
+
+            &__caption {
+                z-index: 3;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: var(--text-color-white);
+            }
+
+            &__link {
+                z-index: 3;
+                position: absolute;
+                bottom: rem(25px);
+                left: rem(40px);
+                display: flex;
+                align-items: center;
+                padding: 0 0 rem(5px) 0;
+                border-bottom: 1px solid var(--text-color-white);
+                color: var(--text-color-white);
+
+                svg {
+                    margin: 0 0 0 rem(11px);
+                }
+            }
+
+            &__registration {
+                z-index: 3;
+                position: absolute;
+                bottom: rem(25px);
+                left: rem(40px);
+                color: var(--text-color-white);
+            }
+
+            @media (max-width: 550px) {
+                width: 100%;
+                margin-bottom: rem(30px);
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        @media (max-width: 812px) {
+            padding-bottom: rem(45px);
+        }
+
+        @media (max-width: 550px) {
+            margin-right: rem(-20px);
+            margin-left: rem(-20px);
+        }
+    }
+}

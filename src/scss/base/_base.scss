@@ -1,0 +1,32 @@
+@import 'normalize';
+@import 'typography';
+
+#app {
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    &.error {
+        display: flex;
+        flex-direction: column;
+        background-color: #F9F9FB;
+        overflow: hidden;
+    }
+
+    @media (max-width: 812px) {
+        padding-top: 79px;
+    }
+}
+
+body {
+
+    &.is-visual {
+        zoom: 1.5;
+    }
+
+    main { 
+
+        @media (max-width: 812px){
+            padding-top: 30px;
+        }
+    }
+}

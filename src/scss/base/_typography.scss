@@ -1,0 +1,284 @@
+$fonts: e-Ukraine-Light, e-Ukraine-Thin, e-Ukraine-Regular, e-Ukraine-Medium;
+
+@each $font in $fonts {
+	@font-face {
+		font-family: '#{$font}';
+		src: url(~@/assets/fonts/#{$font}.woff) format('woff'),
+		url(~@/assets/fonts/#{$font}.woff2) format('woff2');
+	}
+}
+
+$rem-baseline: 16px;
+
+html {
+	@include rem-baseline;
+
+	font-family: $regular;
+	color: var(--text-color-black);
+}
+
+b {
+	font-family: $medium;
+}
+
+.view-title {
+	position: relative;
+
+	&--icon {
+		display: flex;
+		align-items: center;
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		margin: 0 rem(20px) 0 0;
+		transition: 200ms $easing;
+
+		@media (min-width: 1024px) {
+
+			&:hover {
+				color: $blue;
+
+				svg {
+					stroke: $blue;
+				}
+			}
+		}
+	}
+
+	svg {
+		transition: 200ms $easing;
+		stroke: $black;
+	}
+
+	> svg {
+		margin: 0 rem(20px) 0 0;
+	}
+
+	&--h1 {
+		@media (min-width: 813px) {
+			margin: 0 0 rem(100px) 0;
+			font-size: rem(50px);
+			line-height: rem(60px);
+		}
+
+		@media (max-width: 812px) {
+			margin: 0 0 35px 0;
+			font-size: 36px;
+			line-height: 43px;
+		}
+	}
+
+	&--h2 {
+		@media (min-width: 1024px) {
+			margin: 0 0 rem(60px) 0;
+			font-size: rem(38px);
+			line-height: rem(46px);
+		}
+
+		@media (max-width: 1023px) {
+			margin: 0 0 50px 0;
+			font-size: 28px;
+			line-height: 34px;
+		}
+	}
+
+	&--h3 {
+		margin: 0 0 15px 0;
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	&--section {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			content: '';
+			flex-shrink: 0;
+			@media (min-width: 813px) {
+				width: rem(210px);
+				margin-right: rem(25px);
+			}
+
+			@media (max-width: 812px) {
+				width: 40px;
+				margin-right: 15px;
+			}
+			height: 2px;
+			background-color: var(--text-color-black);
+			opacity: .8;
+		}
+	}
+}
+
+.view-text {
+	font-family: $light;
+	font-size: rem(16px);
+	line-height: rem(25px);
+
+	p {
+		margin: 0 0 rem(40px) 0;
+	}
+
+	&__bordered {
+		margin: 0 0 rem(60px) 0;
+		border: 2px solid var(--text-color-blue);
+		box-sizing: border-box;
+
+		&--small {
+			padding: rem(30px);
+		}
+
+		&:not(.view-text__bordered--small) {
+			padding: rem(60px);
+		}
+
+		* {
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__quote {
+		margin: rem(20px) 0 rem(60px) 0;
+		padding: 0 0 0 rem(36px);
+		border-left: 2px solid var(--text-color-black);
+	}
+
+	&__subtitle {
+		margin-bottom: rem(40px);
+		font-family: $medium;
+		font-size: rem(24px);
+		line-height: rem(29px);
+	}
+
+	a:not([class]) {
+		text-decoration: underline;
+		color: $blue;
+
+		@media (min-width: 1024px) {
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: list;
+		
+		li {
+
+			&::before {
+				counter-increment: list;
+				content: counter(list) '. ';
+			}
+
+			&:not(:last-child) {
+				margin: 0 0 rem(20px) 0;
+			}
+		}
+	}
+}
+
+ul.colored-list {
+	margin: rem(10px) 0 0 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		display: flex;
+		align-items: flex-start;
+
+		&:before {
+			content: '';
+			flex-shrink: 0;
+			width: rem(11px);
+			height: rem(11px);
+			margin: rem(5px) rem(10px) 0 0;
+			border: rem(4px) solid;
+			border-radius: 100%;
+			box-sizing: border-box;
+		}
+	}
+
+	&--padding {
+
+		&:not(.colored-list--default) {
+			padding: 0 0 0 rem(21px);
+	
+			li {
+	
+				&:nth-child(n + 4) {
+					margin-left: rem(-21px);
+				}
+			}
+		}
+	}
+
+	&--default {
+
+		li {
+
+			&:not(:first-child) {
+				margin: rem(20px) 0 0 0;
+			}
+
+			&::before {
+				border-color: var(--text-color-black);
+				margin: rem(10px) rem(20px) 0 0;
+			}
+		}
+	}
+
+	&:not(.colored-list--default) {
+
+		li {			
+			margin: 0 0 rem(12px) 0;
+	
+			&:nth-child(1) {
+	
+				&::before {
+					border-color: #2482FF;
+				}
+			}
+	
+			&:nth-child(2) {
+	
+				&::before {
+					border-color: var(--text-color-orange);
+				}
+			}
+	
+			&:nth-child(3) {
+	
+				&::before {
+					border-color: var(--text-color-blue);
+				}
+			}
+	
+			&:nth-child(4) {
+	
+				&::before {
+					border-color: #003262;
+				}
+			}
+		}
+	}
+
+}

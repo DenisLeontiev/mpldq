@@ -1,0 +1,35 @@
+/**
+ * Fonts
+ */
+$thin: 'e-Ukraine-Thin';
+$light: 'e-Ukraine-Light';
+$regular: 'e-Ukraine-Regular';
+$medium: 'e-Ukraine-Medium';
+
+/**
+ * Colors
+ */
+:root {
+    --text-color-black: #0B2239;
+    --text-color-blue: #24E5DB;
+    --text-color-white: #fff;
+    --text-color-link: #435993;
+    --text-color-gray: #808080;
+    --text-color-light-gray: #D1D2D4;
+    --text-color-orange: #FF8B03;
+    --text-color-red: #ff5722;
+}
+
+$black: var(--text-color-black);
+$blue: var(--text-color-blue);
+$white: var(--text-color-white);
+$link: var(--text-color-link);
+$gray: var(--text-color-gray);
+$light-gray: var(--text-color-light-gray);
+$orange: var(--text-color-orange);
+$red: var(--text-color-red);
+
+/**
+ * Helpers
+ */
+$easing: cubic-bezier(0.455, 0.03, 0.515, 0.955);
